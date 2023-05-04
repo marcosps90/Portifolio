@@ -61,7 +61,6 @@ header {
 	color: #002333;
 }
 .inicio{
-	height: 100vh;
 	display: flex;
 	align-items: center;
 	padding: 15px 10%;
