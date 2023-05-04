@@ -74,7 +74,8 @@ header {
 	width: 16ch;
 	white-space: nowrap;
 	overflow: hidden;
-	animation: typing 2s steps(16);
+	animation: typing 2s steps(16), 
+	blinking 0.5s infinite step-end alternate;
 
 }
 @keyframes typing{
