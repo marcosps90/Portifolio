@@ -121,10 +121,10 @@ header {
 }
 .minha-foto {
 	display:flex;
-	width: 400px;
-	height: 400px;
+	width: 450px;
+	height: 450px;
 	margin: 80px;
-	border-radius: 60%;
+	border-radius: 50%;
 	overflow: hidden;
 	transition: 0.5s ease-in-out;
 }
@@ -227,12 +227,28 @@ header {
 	font-size: 60px;
 }
 .contatos a{
+	margin-bottom: 5px;
 	display: block;
 	margin: 10px;
 	margin-left: 100px;
 	text-decoration: none;
 	color:#DEEFE7;
 }
+.contato span{
+	margin-left: 15px;
+}
 .contatos p{
 	color:transparent;
+}
+
+@media screen and (max-width: 1000px) {
+	.minha-foto {
+		display:flex;
+		width: 250px;
+		height: 250px;
+		margin: 80px;
+		border-radius: 38%;
+		overflow: hidden;
+		transition: 0.5s ease-in-out;
+	}
 }
