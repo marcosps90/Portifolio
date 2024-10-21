@@ -37,7 +37,6 @@ body {
   text-decoration: none;
 }
 header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -84,7 +83,7 @@ header {
   }
 }
 .conteudo-inicio h1 {
-  font-size: 45px;
+  font-size: 50px;
   color: #002333;
 }
 .conteudo-inicio .baixar-cv .linkedin {
@@ -130,7 +129,7 @@ header {
   display: flex;
   width: 350px;
   height: 350px;
-  margin: 80px;
+  margin: 100px;
   border-radius: 15%;
   overflow: hidden;
   transition: 0.5s ease-in-out;
@@ -143,6 +142,7 @@ header {
   color: #159a9c;
 }
 #sobremim h1 {
+  margin-top: 35px;
   font-size: 65px;
   text-align: center;
 }
@@ -172,7 +172,6 @@ header {
 }
 
 .logoh {
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 10px;
@@ -254,6 +253,10 @@ header {
       border-radius: 20%; /* Ajuste do border-radius para manter consistência */
       overflow: hidden;
       transition: 0.5s ease-in-out;
+  }
+  .conteudo-inicio h1 {
+    font-size: 35px;
+    color: #002333;
   }
 }
 
