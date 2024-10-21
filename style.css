@@ -23,10 +23,12 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
 
 body {
   background-color: #ffffff;
+
 }
 .Logo {
   text-decoration: none;
@@ -85,36 +87,51 @@ header {
   font-size: 45px;
   color: #002333;
 }
-.conteudo-inicio .baixar-cv {
+.conteudo-inicio .baixar-cv .linkedin {
   width: 345px;
   height: 50px;
 }
-.baixar-cv a {
-  margin: 20px 0 40px;
+.baixar-cv a, .linkedin a {
+  margin: 20px 0 20px;
   justify-content: center;
   display: inline-flex;
   align-items: center;
-  width: 200px;
+  width: 250px;
   height: 100%;
   background: #159a9c;
   border: 2px solid #deefe7;
-  border-radius: 8px;
-  font-size: 19px;
+  border-radius: 11px;
+  font-size: 25px;
   color: #deefe7;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
   transition: 0.3s;
 }
-.baixar-cv a:hover {
+.baixar-cv a:hover, .linkedin a:hover {
   color: #002333;
 }
+
+.links {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.baixar-cv, .linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .minha-foto {
   display: flex;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   margin: 80px;
-  border-radius: 50%;
+  border-radius: 15%;
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
@@ -136,10 +153,15 @@ header {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 768px) {
-  #sobremim p {
-    font-size: 20px;
-    padding: 20px;
+@media screen and (max-width: 600px) {
+  .navbar a {
+    margin-left: 10px; 
+  }
+  .minha-foto {
+    margin: 20px auto;
+  }
+  #sobremim p, #habilidades h2 {
+    font-size: 20px; 
   }
 }
 
@@ -225,12 +247,13 @@ header {
 
 @media screen and (max-width: 1000px) {
   .minha-foto {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    margin: 80px;
-    border-radius: 38%;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
+      display: flex;
+      width: 90vw; /* Ajuste de largura relativo ao viewport */
+      max-width: 350px; /* Define um limite máximo */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 20%; /* Ajuste do border-radius para manter consistência */
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
   }
 }
+
