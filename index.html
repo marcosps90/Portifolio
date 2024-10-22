@@ -6,12 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/1c4b541918.js"
-      crossorigin="anonymous"
-    ></script>
+      rel="stylesheet" />
+      
+    <script src="scripts.js"></script>
+
   </head>
   <body>
     <header>
@@ -45,43 +43,61 @@
       <img src="img/minha_foto.png" alt="foto minha" class="minha-foto" />
     </section>
 
-    <div id="sobremim">
-      <h1>SOBRE MIM</h1>
-      <p>
-        Olá, meu nome é Marcos Vinicios tenho 19 anos e sou um estudante de
-        engenharia de software na PUC Minas. Formei o ensino médio no COTEMIG,
-        onde fiz o curso técnico em informática. Ja trabalhei na Info Design
-        como desenvolvedor, onde ganhei experiência desenvolvendo principalmente
-        em C#, html,VB6 também utilizava o banco de dados MySql.  Essa experiência proporcionou-me
-        uma visão abrangente do ciclo de vida do desenvolvimento de software, depois fui trabalhar na semobs onde desempenhei o papel de suporte técnico onde ajudei na gestão do sistema 
-      </p>
-      <p>
-        Se você estiver interessado em saber mais sobre mim, fique à vontade
-        para entrar em contato!
-      </p>
-    </div>
 
-
-    <div id="habilidades">
-      <h2>HABILIDADES</h2>
-      <div class="logoh">
-        <i class="bx bxl-html5"></i>
-        <i class="bx bxl-css3"></i>
-        <i class="bx bxl-postgresql"></i>
-        <i class="bx bxl-php"></i>
-        <i class="bx bxl-bootstrap"></i>
-        <i class="bx bxl-javascript"></i>
-        <i class="bx bxl-visual-studio"></i>
-        <i class="bx bxl-c-plus-plus"></i>
-        <i class='bx bxl-angular'></i>
-        <i class='bx bxl-github' ></i>
-        <i class='bx bxl-bootstrap' ></i>
-        <i class='bx bxl-typescript' ></i>
-        <i class='bx bxl-react' ></i>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button">SOBRE MIM</button>
+        <div class="accordion-content">
+          <p> Olá, meu nome é Marcos Vinicios tenho 19 anos e moro em contagem minas gerais, estou querendo atuar no mercado como desenvolvedor,  </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">EXPERIENCIAS</button>
+        <div class="accordion-content">
+          <p>
+            Ja trabalhei na Info Design
+            como desenvolvedor fullstack, onde ganhei experiência desenvolvendo principalmente
+            em C#, html,VB6 também utilizava o banco de dados MySql. Essa experiência proporcionou-me
+            uma visão abrangente do ciclo de vida do desenvolvimento de software, depois fui trabalhar na semobs onde desempenhei o papel de suporte técnico 
+            onde ajudei na gestão do sistema onde trabalhei por um ano e meio.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">FORMAÇÃO</button>
+        <div class="accordion-content">
+          <p>Formei o ensino médio no COTEMIG, onde fiz o curso técnico em informática. atualmente estou fazendo engenharia de software na pucminas com formação para 2026.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button">HABILIDADES</button>
+        <div class="accordion-content">
+          <div id="habilidades">
+            <div class="logoh">
+              <i class="bx bxl-html5"></i>
+              <i class="bx bxl-css3"></i>
+              <i class="bx bxl-postgresql"></i>
+              <i class="bx bxl-php"></i>
+              <i class="bx bxl-bootstrap"></i>
+              <i class="bx bxl-javascript"></i>
+              <i class="bx bxl-visual-studio"></i>
+              <i class="bx bxl-c-plus-plus"></i>
+              <i class='bx bxl-angular'></i>
+              <i class='bx bxl-github' ></i>
+              <i class='bx bxl-bootstrap' ></i>
+              <i class='bx bxl-typescript' ></i>
+              <i class='bx bxl-react' ></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    
+
+
+
     <div class="habilidadescompleta">
-      <p>Lista completa das habilidades no currículo</p>
+      <p>Se você estiver interessado em saber mais sobre mim, fique à vontade para entrar em contato!</p>
     </div>
     <div id="projetos">
       <h3>MEUS PROJETOS:</h3>
@@ -93,16 +109,16 @@
     <div id="contato">
       <div class="contatos">
         <h4>Contato:</h4>
-        <a href="https://github.com/marcosps90?tab=repositories" target="_blank"
-          ><i class="fa-brands fa-github"></i>
+        <a href="https://github.com/marcosps90?tab=repositories" target="_blank">
+          <i class='bx bxl-github' ></i>
           <span>github</span>
         </a>
-        <a href="https://wa.me/553193550257" target="_blank"
-          ><i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/553193550257" target="_blank">
+          <i class='bx bxl-whatsapp'></i>
           <span>whatsapp</span>
         </a>
         <a>
-          <i class="fa-regular fa-envelope" style="margin-right: 10px"></i>
+          <i class='bx bx-envelope' ></i>
           <span>marcosps455@gmail.com</span>
         </a>
         <p>invisivel</p>

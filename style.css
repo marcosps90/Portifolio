@@ -36,6 +36,9 @@ body {
   color: #deefe7;
   text-decoration: none;
 }
+.Logo:hover{
+  color:#002333;
+}
 header {
   top: 0;
   left: 0;
@@ -57,6 +60,7 @@ header {
 }
 .navbar a:hover {
   color: #002333;
+
 }
 .inicio {
   display: flex;
@@ -109,6 +113,7 @@ header {
 }
 .baixar-cv a:hover, .linkedin a:hover {
   color: #002333;
+  background-color: #00ff88;
 }
 
 .links {
@@ -153,17 +158,77 @@ header {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar a {
-    margin-left: 10px; 
-  }
-  .minha-foto {
-    margin: 20px auto;
-  }
-  #sobremim p, #habilidades h2 {
-    font-size: 20px; 
-  }
+
+.accordion {
+  width: 100%;
+  max-width: 720px; /* Limita a largura do accordion */
+  margin: 20px auto; /* Centraliza o accordion */
 }
+
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.accordion-button {
+  background-color: #159a9c;
+  color: #deefe7;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  position: relative; /* Necessário para posicionar a seta */
+}
+
+.accordion-button::after {
+  content: "\25BC"; /* Seta para baixo (Unicode) */
+  font-size: 12px; /* Tamanho da seta */
+  color: #deefe7;
+  position: absolute;
+  right: 15px; /* Aproxima a seta da borda direita */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  transition: transform 0.3s ease;
+}
+
+.accordion-button.active::after {
+  transform: translateY(-50%) rotate(180deg); /* Gira a seta quando o item está expandido */
+}
+
+.accordion-button:hover {
+  background-color: #00ff88;
+  color: #002333;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding: 0 15px;
+  background-color: #deefe7;
+  color: #002333;
+}
+
+.accordion-content p {
+  padding: 15px 0;
+  margin: 0;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.accordion-content.show p {
+  opacity: 1;
+}
+
+
 
 #habilidades h2 {
   color: #159a9c;
@@ -177,7 +242,7 @@ header {
   font-size: 10px;
 }
 .logoh i {
-  margin: 1px 15px 5px;
+  margin: 10px 5px 10px;
   font-size: 85px;
   background-color: #002333;
   border-radius: 25%;
@@ -232,8 +297,7 @@ header {
 .contatos a {
   margin-bottom: 5px;
   display: block;
-  margin: 10px;
-  margin-left: 100px;
+  margin-left: 40px;
   text-decoration: none;
   color: #deefe7;
 }
@@ -243,6 +307,11 @@ header {
 .contatos p {
   color: transparent;
 }
+
+.contatos span:hover, .contatos i:hover {
+  color: #002333;
+}
+
 
 @media screen and (max-width: 1000px) {
   .minha-foto {
@@ -257,6 +326,17 @@ header {
   .conteudo-inicio h1 {
     font-size: 35px;
     color: #002333;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar a {
+    margin-left: 10px; 
+  }
+  .minha-foto {
+    margin: 20px auto;
+  }
+  #sobremim p, #habilidades h2 {
+    font-size: 20px; 
   }
 }
 
